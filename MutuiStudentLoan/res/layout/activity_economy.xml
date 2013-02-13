@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/affordability_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".AffordabilityFragment" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:padding="16dp"
+        android:paddingTop="26dp"
+        android:src="@drawable/fuel_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:padding="@dimen/default_gap" >
+
+        <TextView
+            android:id="@+id/economy_textview_costlabel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:paddingTop="@dimen/default_gap"
+            android:text="Estimated Cost"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/economy_textview_total"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="TextView"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+           <TextView
+                android:id="@+id/economy_textview_total_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="TextView"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_gap"
+        android:paddingRight="@dimen/default_gap" >
+
+        <LinearLayout style="@style/econ_rows" >
+
+            <TextView
+                android:id="@+id/economy_textview_mpy"
+                style="@style/econ_label"
+                android:text="@string/economy_textview_mpy" />
+
+            <TextView
+                android:id="@+id/economy_textview_mpy_value"
+                style="@style/econ_display"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/economy_seekbar_mpy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:progress="30" />
+
+        <LinearLayout
+            style="@style/econ_rows" >
+
+            <TextView
+                android:id="@+id/economy_textview_mpg"
+                style="@style/econ_label"
+                android:text="@string/economy_textview_mpg" />
+
+            <TextView
+                android:id="@+id/economy_textview_mpg_value"
+                style="@style/econ_display"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/economy_seekbar_mpg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:progress="25" />
+
+        <LinearLayout style="@style/econ_rows" >
+
+            <TextView
+                android:id="@+id/textview_economy_ppg"
+                style="@style/econ_label"
+                android:text="@string/economy_textview_ppg" />
+
+            <TextView
+                android:id="@+id/economy_textview_ppg_value"
+                style="@style/econ_display"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/economy_seekbar_ppg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:max="500"
+            android:progress="300" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:src="@drawable/filler" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="@string/settings_title_preferences">
+        <ListPreference 
+            android:title="@string/settings_title_measurement"
+            android:entries="@array/settings_metrics"
+            android:entryValues="@array/settings_metrics_values"
+            android:defaultValue="Imperial" />
+        <Preference
+            android:title="@string/settings_title_affordability" />        
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/settings_title_support">
+        <Preference 
+            android:title="@string/settings_title_contact" />
+        <Preference 
+            android:title="@string/settings_title_about" />        
+        <Preference 
+            android:title="@string/settings_title_rate" /> 
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/settings_title_data">
+        <Preference 
+            android:title="@string/settings_title_delete"
+            android:summary="@string/settings_summary_delete" />  
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

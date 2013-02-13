@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_metrics">
+	    <item>Imperial</item>
+	    <item>Metric</item>
+    </string-array>  
+    
+    <string-array name="settings_metrics_values">
+        <item>Imperial</item>
+        <item>Metric</item>
+	</string-array>
+</resources>

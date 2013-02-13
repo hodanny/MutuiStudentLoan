@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_level_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".PaymentActivity" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/calculate_text" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="8dp"
+                android:text="@string/total_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/title_font_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView_paymentSave"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.9"
+                android:onClick="onClick_Save"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/save_blue" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.7"
+        android:paddingTop="@dimen/default_gap" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/textview_sticker_price"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_sticker_price" />
+
+                <EditText
+                    android:id="@+id/editText_price"
+                    style="@style/calculatorInputs"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:text="@string/initial_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview_interest_rate"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_interest_rate" />
+
+                <EditText
+                    android:id="@+id/editText_interest"
+                    style="@style/calculatorInputs"
+                    android:hint="Interest"
+                    android:inputType="numberDecimal"
+                    android:text="@string/initial_interest"
+                    android:textColorLink="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/textview_term"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_term" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_yearMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ToggleButton" />
+
+                <EditText
+                    android:id="@+id/editText_term"
+                    style="@style/calculatorInputs"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Term"
+                    android:inputType="number"
+                    android:text="@string/initial_term" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView_tax"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_tax" />
+
+                <EditText
+                    android:id="@+id/editText_salesTax"
+                    style="@style/calculatorInputs"
+                    android:hint="Optional"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView_discount"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_discount" />
+
+                <EditText
+                    android:id="@+id/editText_discount"
+                    style="@style/calculatorInputs"
+                    android:hint="Optional"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/calculatorRows"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView_fees"
+                    style="@style/calculatorFields"
+                    android:text="@string/textview_fees" />
+
+                <EditText
+                    android:id="@+id/editText_fees"
+                    style="@style/calculatorInputs"
+                    android:hint="Optional"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

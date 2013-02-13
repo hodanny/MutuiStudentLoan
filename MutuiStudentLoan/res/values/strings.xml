@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mutui Cars</string>
+    <string name="total_price">0</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Action Bar -->
+    <string name="title_section1">Finance</string>
+    <string name="title_section2">Gas Economy</string>
+    <string name="title_section3">Cars</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- Economy Activity -->
+    <string name="title_activity_economy_acitivity">EconomyAcitivity</string>
+
+    <!-- Payment Activity -->
+    <string name="title_activity_payment">Monthly Payment Calculator</string>
+    <string name="textview_sticker_price">MSRP ($)</string>
+    <string name="textview_interest_rate">Interest (%)</string>
+    <string name="textview_term">Term</string>
+    <string name="textview_tax">Tax (%)</string>
+    <string name="textview_discount">Downpayment</string>
+    <string name="textview_fees">Extra Fees</string>
+    <string name="button_save">Save Car</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="initial_price">25000</string>
+    <string name="initial_interest">4</string>
+    <string name="initial_term">36</string>
+
+    <!-- Main Activity -->
+    <string name="title_activity_main">Mutui Car Finance</string>
+    <string name="button_add">Add</string>
+    <string name="textview_cars">List of Cars (Placeholder)</string>
+
+    <!-- Summary Activity -->
+    <string name="title_activity_summary">Summary</string>
+    <string name="summary">Summary</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_car_window">AddCarWindow</string>
+    <string name="summary_textview_term">0</string>
+
+    <!-- Add Car Activity -->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="title_activity_amortization">Loan Amortization Graph</string>
+    <string name="title_activity_affordability_fragment">AffordabilityFragment</string>
+
+    <!-- Affordability Fragment -->
+    <string name="affordability_payment">Monthly Payment ($)</string>
+    <string name="affordability_interest">Interest Rate (%)</string>
+    <string name="affordability_term">Desired Term</string>
+    <string name="affordability_tiv">Trade-in Value ($)</string>
+    <string name="title_activity_economy_fragment">EconomyFragment</string>
+
+    <!-- Economy Fragment -->
+    <string name="economy_textview_mpy">Miles per Year</string>
+    <string name="economy_textview_mpg">Miles per Gallon</string>
+    <string name="economy_textview_ppg">Price per Gallon</string>
+    <string name="title_activity_loan_list">LoanListActivity</string>
+
+    <!-- Settings Fragment -->
+    <string name="settings_title_preferences">User Preferences</string>
+    <string name="settings_title_measurement">System of Measurement</string>
+    <string name="settings_title_affordability">Affordability</string>
+    <string name="settings_title_support">Support</string>
+    <string name="settings_title_about">About us</string>
+    <string name="settings_title_contact">Contact us</string>
+    <string name="settings_title_rate">Rate Mutui Cars</string>
+    <string name="settings_title_data">Data</string>
+    <string name="settings_title_delete">Reset</string>
+    <string name="settings_summary_delete">Delete all saved car loans.</string>
+    
+    <string name="title_activity_economy">Economy</string>
+    <string name="title_activity_amortization_schedule">Amortization Schedule</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Affordability -->
+    <string name="affordability_textview_affordability">Estimated Budget</string>
+</resources>
