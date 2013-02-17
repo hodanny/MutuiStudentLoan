@@ -1,7 +1,8 @@
 package com.coppio.tuition.test;
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
-
+import android.widget.ImageView;
+import com.coppio.tuition.R;
 import com.coppio.tuition.MutuiTuition;
 import com.jayway.android.robotium.solo.Solo;
 
@@ -9,6 +10,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MutuiTuit
 
 	private Solo solo;
 	Activity mActivity;
+	ImageView about;
 	
 	public MainActivityTest() {
 		super(MutuiTuition.class);
@@ -20,6 +22,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MutuiTuit
 		//This is where the solo object is created.
 		solo = new Solo(getInstrumentation(), getActivity());
 		solo.assertCurrentActivity("Expected Mainy Activity", "MutuiTuition");
+		about = (ImageView) solo.getView(R.id.main_imageview_about);
 
 	}
 
@@ -30,9 +33,14 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MutuiTuit
 		solo.finishOpenedActivities();
 	}
 	
-	public void testStartAboutActivity()
+	public void testPreConditions() throws Exception {
+		solo.assertCurrentActivity("Expected Main Activity", "MainActivity");
+		assertNotNull("Expected About Image", about);
+	}
+	
+	public void testStartAboutActivity() throws Exception
 	{
-		solo.clickOnButton(0);
+		solo.clickOnView(about);
 		solo.assertCurrentActivity("Expected About Activity", "AboutActivity");
 	}
 }
