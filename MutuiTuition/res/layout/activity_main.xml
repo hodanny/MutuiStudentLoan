@@ -108,46 +108,54 @@
                     style="@style/input_label"
                     android:text="@string/main_textview_principal" />
 
-                <EditText
-                    android:id="@+id/main_edittext_principal"
-                    style="@style/input_field"
-                    android:ems="10" />
-            </LinearLayout>
 
-            <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
+            <EditText
+                android:id="@+id/main_edittext_principal"
+                style="@style/input_field"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="15000" >
 
-                <TextView
-                    android:id="@+id/main_textview_term"
-                    style="@style/input_label"
-                    android:text="@string/main_textview_term" />
-
-                <EditText
-                    android:id="@+id/main_edittext_term"
-                    style="@style/input_field"
-                    android:ems="10" />
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
-
-                <TextView
-                    android:id="@+id/main_textview_interestrate"
-                    style="@style/input_label"
-                    android:text="@string/main_textview_interestrate" />
-
-                <EditText
-                    android:id="@+id/main_edittext_interestrate"
-                    style="@style/input_field"
-                    android:ems="10" />
-            </LinearLayout>
+                <requestFocus />
+            </EditText>
         </LinearLayout>
-    </LinearLayout>
-    
 
-    
+        <LinearLayout
+            style="@style/rows" >
+
+            <TextView
+                android:id="@+id/main_textview_term"
+                style="@style/input_label"
+                android:text="@string/main_textview_term" />
+
+            <EditText
+                android:id="@+id/main_edittext_term"
+                style="@style/input_field"
+                android:ems="10"
+                android:inputType="number"
+                android:text="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/rows" >
+
+            <TextView
+                android:id="@+id/main_textview_interestrate"
+                style="@style/input_label"
+                android:text="@string/main_textview_interestrate" />
+
+            <EditText
+                android:id="@+id/main_edittext_interestrate"
+                style="@style/input_field"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="2.5" />
+
+
+        </LinearLayout>
+     </LinearLayout>
+    </LinearLayout>
     </ViewSwitcher>
 
 </LinearLayout>
