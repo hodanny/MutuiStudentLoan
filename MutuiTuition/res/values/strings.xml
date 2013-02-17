@@ -5,7 +5,7 @@
     
     <!-- Main Activity -->
     <string name="main_textview_monthly_label">Monthly Payment</string>
-    <string name="main_textview_net_label">Total Amount Paid</string>
+    <string name="main_textview_net_label">Amount Paid</string>
     <string name="main_textview_totalinterest_label">Interest Paid</string>
     <string name="main_textview_monthly">0</string>
     <string name="main_textview_net">0</string>
