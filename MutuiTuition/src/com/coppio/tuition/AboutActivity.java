@@ -1,8 +1,13 @@
 package com.coppio.tuition;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.ads.AdView;
 
@@ -29,5 +34,38 @@ public class AboutActivity extends Activity {
 	  }
 	  super.onDestroy();
 	}
-
+	
+	private boolean MyStartActivity(Intent aIntent) {
+	    try
+	    {
+	        startActivity(aIntent);
+	        return true;
+	    }
+	    catch (ActivityNotFoundException e)
+	    {
+	        return false;
+	    }
+	}
+	
+	//On click event for rate this app button
+	public void onClick_Rate(View v) {
+	    Intent intent = new Intent(Intent.ACTION_VIEW);
+	    //Try Google play
+	    intent.setData(Uri.parse("market://details?id=" + getApplicationContext().getPackageName()));
+	    if (MyStartActivity(intent) == false) {
+	        //Market (Google play) app seems not installed, let's try to open a webbrowser
+	        intent.setData(Uri.parse("https://play.google.com/store/apps/details?" + getApplicationContext().getPackageName()));
+	        if (MyStartActivity(intent) == false) {
+	            //Well if this also fails, we have run out of options, inform the user.
+	            Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
+	        }
+	    }
+	}
+	
+	public void onClick_Website(View v)
+	{
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setData(Uri.parse("http://www.coppio.com"));
+		startActivity(intent);
+	}
 }
