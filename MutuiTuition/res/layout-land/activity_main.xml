@@ -114,6 +114,7 @@
                     style="@style/input_field_land"
                     android:ems="10"
                     android:inputType="number"
+                    android:maxLength="2"
                     android:text="10" />
             </LinearLayout>
 
