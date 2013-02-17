@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Mutui Student Loan -->
-    <string name="app_name">Mutui Student</string>
+    <string name="app_name">Mutui Tuition</string>
 
     <!-- Main Activity -->
     <string name="main_textview_monthly_label">Monthly Payment</string>
