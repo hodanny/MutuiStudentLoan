@@ -50,4 +50,15 @@ public class MutuiStudentLoanTest extends ActivityInstrumentationTestCase2<Mutui
 		assertEquals("Net Value Exception", "$79,290.44", solo.getText(3).getText().toString());
 		assertEquals("Interest Value Exception", "$29,290.44", solo.getText(5).getText().toString());
 	}
+	
+	public void testCase2()
+	{
+		solo.enterText(0, "25000");
+		solo.enterText(1, "12");
+		solo.enterText(2, "0");
+
+		assertEquals("Monthly Value Exception", "$2,083.33", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$25,000", solo.getText(3).getText().toString());
+		assertEquals("Interest Value Exception", "$0.00", solo.getText(5).getText().toString());
+	}
 }
