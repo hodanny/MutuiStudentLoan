@@ -5,4 +5,5 @@
     <dimen name="title_font_size">28dp</dimen>
     <dimen name="sixteen">16dp</dimen>
     <dimen name="twentyeight">28dp</dimen>
+    <dimen name="six">6dp</dimen>
 </resources>
