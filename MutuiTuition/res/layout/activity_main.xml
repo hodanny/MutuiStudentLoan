@@ -6,15 +6,16 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/default_gap"
+    android:paddingTop="@dimen/twentyeight"
     tools:context=".MainActivity" >
 
     <ViewSwitcher
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main_viewswitcher"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:inAnimation="@android:anim/fade_in"
-        android:outAnimation="@android:anim/fade_out"
-        >
+        android:outAnimation="@android:anim/fade_out" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -99,7 +100,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:padding="@dimen/six" >
 
             <LinearLayout
                 style="@style/rows"

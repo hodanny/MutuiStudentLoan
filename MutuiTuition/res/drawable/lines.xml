@@ -12,11 +12,11 @@
    <item android:top="1dp" android:bottom="1dp"> 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke
-        android:width="1dip"
+        android:width="0dip"
         android:color="#444444" />
 
     <solid 
-        android:color="#fff"
+        android:color="#70ffffff"
         android:paddingLeft="10dip"
         android:paddingTop="10dip"/>
 
