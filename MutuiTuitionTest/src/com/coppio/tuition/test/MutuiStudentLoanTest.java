@@ -54,11 +54,56 @@ public class MutuiStudentLoanTest extends ActivityInstrumentationTestCase2<Mutui
 	public void testCase2()
 	{
 		solo.enterText(0, "25000");
-		solo.enterText(1, "12");
+		solo.enterText(1, "1");
+		solo.enterText(2, "1");
+
+		assertEquals("Monthly Value Exception", "$2,094.64", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$25,135.62", solo.getText(3).getText().toString());
+		assertEquals("Interest Value Exception", "$135.62", solo.getText(5).getText().toString());
+		
+	}
+	
+	public void testCase3()
+	{
+		solo.enterText(0, "25000");
+		solo.enterText(1, "0");
+		solo.enterText(2, "1");
+
+		assertEquals("Monthly Value Exception", "$2,094.64", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$25,135.62", solo.getText(3).getText().toString());
+		assertEquals("Interest Value Exception", "$135.62", solo.getText(5).getText().toString());
+	}
+	
+	public void testCase4()
+	{
+		solo.enterText(0, "12000");
+		solo.enterText(1, "1");
 		solo.enterText(2, "0");
 
-		assertEquals("Monthly Value Exception", "$2,083.33", solo.getText(1).getText().toString());
-		assertEquals("Net Value Exception", "$25,000", solo.getText(3).getText().toString());
+		assertEquals("Monthly Value Exception", "$1,000.00", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$12,000.00", solo.getText(3).getText().toString());
+		assertEquals("Interest Value Exception", "$0.00", solo.getText(5).getText().toString());
+	}
+	
+	public void testCase5()
+	{
+		solo.enterText(0, "250.55");
+		solo.enterText(1, "30");
+		solo.enterText(2, "1.19");
+
+		assertEquals("Monthly Value Exception", "$0.83", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$298.05", solo.getText(3).getText().toString());
+		assertEquals("Interest Value Exception", "$47.50", solo.getText(5).getText().toString());
+	}
+	
+	public void testCase6()
+	{
+		solo.enterText(0, "0");
+		solo.enterText(1, "30");
+		solo.enterText(2, "1.19");
+
+		assertEquals("Monthly Value Exception", "$0.00", solo.getText(1).getText().toString());
+		assertEquals("Net Value Exception", "$0.00", solo.getText(3).getText().toString());
 		assertEquals("Interest Value Exception", "$0.00", solo.getText(5).getText().toString());
 	}
 }

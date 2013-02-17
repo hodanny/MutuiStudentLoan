@@ -121,7 +121,10 @@
                     style="@style/input_field"
                     android:ems="10"
                     android:inputType="numberDecimal"
-                    android:text="15000" />
+                    android:text="15000" >
+
+                    <requestFocus />
+                </EditText>
             </LinearLayout>
 
             <LinearLayout style="@style/rows" >
@@ -155,8 +158,17 @@
                     android:text="2.5" />
             </LinearLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_about"
+            android:text="Button" />
     </LinearLayout>
 
     </ViewSwitcher>
 
+
+  
 </LinearLayout>

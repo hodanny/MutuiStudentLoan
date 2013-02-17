@@ -3,11 +3,13 @@ package com.coppio.tuition;
 import java.text.NumberFormat;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -95,6 +97,20 @@ public class MutuiTuition extends Activity  {
 	    
 		calculate();
 	}
+	
+	@Override
+	public void onDestroy() {
+	  if (ad != null) {
+	    ad.destroy();
+	  }
+	  super.onDestroy();
+	}
+	
+	public void onClick_about(View view)
+	{
+		Intent intent = new Intent(this, AboutActivity.class);
+		startActivity(intent);
+	}
 
 	public void calculate()
 	{
@@ -106,6 +122,8 @@ public class MutuiTuition extends Activity  {
 		try{
 		double interest = Double.parseDouble(editText_interestrate.getText().toString());
 		int term            = Integer.parseInt(editText_term.getText().toString());
+		term *= 12;
+		if (term == 0) term = 12;
 		double principal    = Double.parseDouble(editText_principal.getText().toString());
 		
 		textView_monthly.setText(NumberFormat.getCurrencyInstance().format(LoanUtils.calculateMonthlyPayment(principal, term, interest, true)));
