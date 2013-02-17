@@ -16,7 +16,7 @@
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out"
         >
-        
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -29,8 +29,8 @@
             android:layout_gravity="center_vertical|center_horizontal"
             android:paddingTop="@dimen/sixteen"
             android:src="@drawable/splash" />
-        
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:padding="@dimen/sixteen"
@@ -61,7 +61,8 @@
 
                 <TextView
                     android:id="@+id/main_textview_monthly"
-                    style="@style/result_display" />
+                    style="@style/result_display"
+                    android:text="$4334.00" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,54 +110,50 @@
                     style="@style/input_label"
                     android:text="@string/main_textview_principal" />
 
+                <EditText
+                    android:id="@+id/main_edittext_principal"
+                    style="@style/input_field"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="15000" >
 
-            <EditText
-                android:id="@+id/main_edittext_principal"
-                style="@style/input_field"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:text="15000" >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
 
-                <requestFocus />
-            </EditText>
+            <LinearLayout style="@style/rows" >
+
+                <TextView
+                    android:id="@+id/main_textview_term"
+                    style="@style/input_label"
+                    android:text="@string/main_textview_term" />
+
+                <EditText
+                    android:id="@+id/main_edittext_term"
+                    style="@style/input_field"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="10" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rows" >
+
+                <TextView
+                    android:id="@+id/main_textview_interestrate"
+                    style="@style/input_label"
+                    android:text="@string/main_textview_interestrate" />
+
+                <EditText
+                    android:id="@+id/main_edittext_interestrate"
+                    style="@style/input_field"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="2.5" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            style="@style/rows" >
-
-            <TextView
-                android:id="@+id/main_textview_term"
-                style="@style/input_label"
-                android:text="@string/main_textview_term" />
-
-            <EditText
-                android:id="@+id/main_edittext_term"
-                style="@style/input_field"
-                android:ems="10"
-                android:inputType="number"
-                android:text="10" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/rows" >
-
-            <TextView
-                android:id="@+id/main_textview_interestrate"
-                style="@style/input_label"
-                android:text="@string/main_textview_interestrate" />
-
-            <EditText
-                android:id="@+id/main_edittext_interestrate"
-                style="@style/input_field"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:text="2.5" />
-
-
-        </LinearLayout>
-     </LinearLayout>
     </LinearLayout>
+
     </ViewSwitcher>
 
 </LinearLayout>
