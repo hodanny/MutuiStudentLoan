@@ -36,7 +36,7 @@ public class LoanUtils {
 		
 		if(interest == 0)
 		{
-			return principal;
+			return LoanUtils.round(principal/12,2);
 		}
 		else
 		{
