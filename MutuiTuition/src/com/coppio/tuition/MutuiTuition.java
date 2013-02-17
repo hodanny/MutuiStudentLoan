@@ -106,6 +106,8 @@ public class MutuiTuition extends Activity  {
 		try{
 		double interest = Double.parseDouble(editText_interestrate.getText().toString());
 		int term            = Integer.parseInt(editText_term.getText().toString());
+		term *= 12;
+		if (term == 0) term = 12;
 		double principal    = Double.parseDouble(editText_principal.getText().toString());
 		
 		textView_monthly.setText(NumberFormat.getCurrencyInstance().format(LoanUtils.calculateMonthlyPayment(principal, term, interest, true)));
