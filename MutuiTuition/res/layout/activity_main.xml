@@ -13,7 +13,7 @@
         android:id="@+id/main_viewswitcher"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
+        android:layout_weight="1"
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out" >
 
@@ -107,7 +107,8 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/twentyeight"
             android:paddingLeft="@dimen/sixteen"
-            android:paddingRight="@dimen/sixteen" >
+            android:paddingRight="@dimen/sixteen"
+            android:paddingTop="@dimen/sixteen" >
 
             <LinearLayout
                 style="@style/rows"
@@ -123,7 +124,10 @@
                     style="@style/input_field"
                     android:ems="10"
                     android:inputType="numberDecimal"
-                    android:text="15000" />
+                    android:text="15000" >
+
+                    <requestFocus />
+                </EditText>
             </LinearLayout>
 
             <LinearLayout style="@style/rows" >
@@ -164,7 +168,9 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:onClick="onClick_about"
+            android:paddingBottom="@dimen/sixteen"
             android:paddingTop="@dimen/twentyeight"
+            android:scaleType="fitEnd"
             android:src="@drawable/about" />
     </LinearLayout>
 
