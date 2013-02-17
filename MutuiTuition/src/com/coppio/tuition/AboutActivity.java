@@ -48,13 +48,13 @@ public class AboutActivity extends Activity {
 	}
 	
 	//On click event for rate this app button
-	public void onClick_Rate(View v) {
+	public void onClick_rate(View v) {
 	    Intent intent = new Intent(Intent.ACTION_VIEW);
 	    //Try Google play
-	    intent.setData(Uri.parse("market://details?id=" + getApplicationContext().getPackageName()));
+	    intent.setData(Uri.parse("market://details?id=com.corgipark.mutui.car"));
 	    if (MyStartActivity(intent) == false) {
-	        //Market (Google play) app seems not installed, let's try to open a webbrowser
-	        intent.setData(Uri.parse("https://play.google.com/store/apps/details?" + getApplicationContext().getPackageName()));
+	        //Market (Google play) app seems not installed, let's try to open a webbrowser'
+	        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.corgipark.mutui.car"));
 	        if (MyStartActivity(intent) == false) {
 	            //Well if this also fails, we have run out of options, inform the user.
 	            Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
@@ -62,7 +62,7 @@ public class AboutActivity extends Activity {
 	    }
 	}
 	
-	public void onClick_Website(View v)
+	public void onClick_website(View v)
 	{
 		Intent intent = new Intent(Intent.ACTION_VIEW);
 		intent.setData(Uri.parse("http://www.coppio.com"));

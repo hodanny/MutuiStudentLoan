@@ -13,34 +13,40 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/about" />
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingTop="@dimen/twentyeight"
+        android:scaleType="center"
+        android:src="@drawable/about_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/about_imageview_rate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
+            android:onClick="onClick_rate"
             android:padding="16dp"
             android:src="@drawable/rate" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/about_imageview_web"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:padding="16dp"
+            android:onClick="onClick_website"
             android:src="@drawable/www" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/about_imageview_store"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:padding="16dp"
+            android:onClick="onClick_store"
             android:src="@drawable/mutui_cars" />
 
     </LinearLayout>

@@ -33,7 +33,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
         android:paddingLeft="@dimen/sixteen"
         android:paddingRight="@dimen/sixteen"
@@ -123,10 +123,7 @@
                     style="@style/input_field"
                     android:ems="10"
                     android:inputType="numberDecimal"
-                    android:text="15000" >
-
-                    <requestFocus />
-                </EditText>
+                    android:text="15000" />
             </LinearLayout>
 
             <LinearLayout style="@style/rows" >
@@ -164,7 +161,7 @@
         <ImageView
             android:id="@+id/imageView_about_btn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:onClick="onClick_about"
             android:paddingTop="@dimen/twentyeight"
