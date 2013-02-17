@@ -9,8 +9,13 @@ import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
+
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 
 public class MutuiTuition extends Activity  {
 	
@@ -24,6 +29,8 @@ public class MutuiTuition extends Activity  {
 	TextView textView_interestpaid;
 	
 	static ViewSwitcher viewSwitcher;
+	
+	AdView ad;
 	//second, we create the TextWatcher
 	TextWatcher textWatcher = new TextWatcher() {
 	 
@@ -78,6 +85,14 @@ public class MutuiTuition extends Activity  {
 		}
 		else viewSwitcher.showNext();
 		
+		LinearLayout layout = (LinearLayout) findViewById(R.id.container);
+	    ad = new AdView(this, AdSize.BANNER, "a151209edabfa3b");
+	    layout.addView(ad);
+//	    AdRequest adRequest = new AdRequest();
+//	    adRequest.addTestDevice("4FEE23C761CF84D39A3AB3D1CADD481F");
+	    // Initiate a generic request to load it with an ad
+	    ad.loadAd(new AdRequest());
+	    
 		calculate();
 	}
 
