@@ -105,7 +105,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="@dimen/sixteen" >
+            android:paddingBottom="@dimen/twentyeight"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen" >
 
             <LinearLayout
                 style="@style/rows"
@@ -159,12 +161,14 @@
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button1"
+        <ImageView
+            android:id="@+id/imageView_about_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:onClick="onClick_about"
-            android:text="Button" />
+            android:paddingTop="@dimen/twentyeight"
+            android:src="@drawable/about" />
     </LinearLayout>
 
     </ViewSwitcher>
