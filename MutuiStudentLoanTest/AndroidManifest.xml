@@ -8,7 +8,7 @@
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="com.corgipark.matui.car" />
+        android:targetPackage="com.coppio.student.test" />
 
     <application
         android:icon="@drawable/ic_launcher"

@@ -12,27 +12,27 @@ public final class R {
         public static final int image_click=0x7f040000;
     }
     public static final class array {
-        public static final int settings_metrics=0x7f060000;
-        public static final int settings_metrics_values=0x7f060001;
+        public static final int settings_metrics=0x7f050000;
+        public static final int settings_metrics_values=0x7f050001;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int beige=0x7f070004;
-        public static final int black=0x7f070000;
-        public static final int blue=0x7f070008;
-        public static final int brown=0x7f070005;
-        public static final int cream=0x7f070009;
-        public static final int gray=0x7f070003;
-        public static final int lightRed=0x7f070006;
-        public static final int red=0x7f070007;
-        public static final int teal=0x7f070002;
-        public static final int white=0x7f070001;
+        public static final int beige=0x7f060004;
+        public static final int black=0x7f060000;
+        public static final int blue=0x7f060008;
+        public static final int brown=0x7f060005;
+        public static final int cream=0x7f060009;
+        public static final int gray=0x7f060003;
+        public static final int lightRed=0x7f060006;
+        public static final int red=0x7f060007;
+        public static final int teal=0x7f060002;
+        public static final int white=0x7f060001;
     }
     public static final class dimen {
-        public static final int default_gap=0x7f080000;
-        public static final int logo_size=0x7f080001;
-        public static final int title_font_size=0x7f080002;
+        public static final int default_gap=0x7f070000;
+        public static final int logo_size=0x7f070001;
+        public static final int title_font_size=0x7f070002;
     }
     public static final class drawable {
         public static final int activated_background_holo_light=0x7f020000;
@@ -98,245 +98,47 @@ public final class R {
         public static final int trash_blue=0x7f02003c;
     }
     public static final class id {
-        public static final int TableRow01=0x7f0c006a;
-        public static final int TableRow02=0x7f0c006b;
-        public static final int aGraph_button_aSchedule=0x7f0c007d;
-        public static final int aSchedule_lv_balance=0x7f0c0073;
-        public static final int aSchedule_lv_header_balance=0x7f0c007a;
-        public static final int aSchedule_lv_header_interest=0x7f0c0079;
-        public static final int aSchedule_lv_header_payment=0x7f0c0077;
-        public static final int aSchedule_lv_header_principal=0x7f0c0078;
-        public static final int aSchedule_lv_interest=0x7f0c0072;
-        public static final int aSchedule_lv_payment_number=0x7f0c0070;
-        public static final int aSchedule_lv_principal=0x7f0c0071;
-        public static final int affordability_textview_affordability=0x7f0c0005;
-        public static final int affordability_textview_affordability_value=0x7f0c0006;
-        public static final int affordability_top_layout=0x7f0c0003;
-        public static final int button1=0x7f0c000f;
-        public static final int buttonCancel=0x7f0c0002;
-        public static final int buttonOk=0x7f0c0000;
-        public static final int button_addCar=0x7f0c002b;
-        public static final int car_description=0x7f0c0001;
-        public static final int cartlist_textview_title=0x7f0c0020;
-        public static final int chart=0x7f0c0010;
-        public static final int chart2=0x7f0c007c;
-        public static final int container=0x7f0c0022;
-        public static final int economy_seekbar_mpg=0x7f0c001b;
-        public static final int economy_seekbar_mpy=0x7f0c0018;
-        public static final int economy_seekbar_ppg=0x7f0c001e;
-        public static final int economy_textview_costlabel=0x7f0c0013;
-        public static final int economy_textview_mpg=0x7f0c0019;
-        public static final int economy_textview_mpg_value=0x7f0c001a;
-        public static final int economy_textview_mpy=0x7f0c0016;
-        public static final int economy_textview_mpy_value=0x7f0c0017;
-        public static final int economy_textview_ppg_value=0x7f0c001d;
-        public static final int economy_textview_total=0x7f0c0014;
-        public static final int economy_textview_total_monthly=0x7f0c0015;
-        public static final int editText_discount=0x7f0c003f;
-        public static final int editText_fees=0x7f0c0041;
-        public static final int editText_interest=0x7f0c0038;
-        public static final int editText_price=0x7f0c0036;
-        public static final int editText_salesTax=0x7f0c003d;
-        public static final int editText_term=0x7f0c003a;
-        public static final int edittext_affordability_interest=0x7f0c000a;
-        public static final int edittext_affordability_payment=0x7f0c0008;
-        public static final int edittext_affordability_term=0x7f0c000c;
-        public static final int edittext_affordability_tiv=0x7f0c000e;
-        public static final int edittext_economy_mpg=0x7f0c006e;
-        public static final int edittext_economy_mpy=0x7f0c006c;
-        public static final int edittext_economy_ppg=0x7f0c006f;
-        public static final int header=0x7f0c0011;
-        public static final int imageView1=0x7f0c0004;
-        public static final int imageView2=0x7f0c001f;
-        public static final int imageView4=0x7f0c002d;
-        public static final int imageView5=0x7f0c0024;
-        public static final int imageView6=0x7f0c002a;
-        public static final int imageView_delete_btn=0x7f0c0067;
-        public static final int imageView_edit_btn=0x7f0c0065;
-        public static final int imageView_graph_btn=0x7f0c0066;
-        public static final int imageView_paymentSave=0x7f0c002e;
-        public static final int imgIcon=0x7f0c0074;
-        public static final int interest_rate=0x7f0c0009;
-        public static final int listView_aSchedule1=0x7f0c0012;
-        public static final int listView_carList=0x7f0c0021;
-        public static final int main_imageview_calculator=0x7f0c0025;
-        public static final int main_imageview_cars=0x7f0c0026;
-        public static final int main_imageview_economy=0x7f0c0027;
-        public static final int main_imageview_logo=0x7f0c0023;
-        public static final int main_imageview_settings=0x7f0c0028;
-        public static final int main_viewswitcher=0x7f0c0029;
-        public static final int menu_settings=0x7f0c007f;
-        public static final int monthly_payment=0x7f0c0007;
-        public static final int new_series=0x7f0c007e;
-        public static final int paymentTitle=0x7f0c0076;
-        public static final int payment_textview_interestpaid=0x7f0c0032;
-        public static final int payment_textview_label_interestpaid=0x7f0c0031;
-        public static final int payment_textview_label_monthly=0x7f0c0033;
-        public static final int payment_textview_label_net=0x7f0c002f;
-        public static final int payment_textview_monthly=0x7f0c0034;
-        public static final int payment_textview_net=0x7f0c0030;
-        public static final int payment_toggle_yearmonth=0x7f0c003b;
-        public static final int summary_edittext_description=0x7f0c0058;
-        public static final int summary_edittext_discount=0x7f0c0062;
-        public static final int summary_edittext_fees=0x7f0c0064;
-        public static final int summary_edittext_interest=0x7f0c005e;
-        public static final int summary_edittext_price=0x7f0c005a;
-        public static final int summary_edittext_tax=0x7f0c0060;
-        public static final int summary_edittext_term=0x7f0c005c;
-        public static final int summary_imageview_amortization=0x7f0c0045;
-        public static final int summary_imageview_delete=0x7f0c0046;
-        public static final int summary_imageview_edit=0x7f0c0044;
-        public static final int summary_label_description=0x7f0c0049;
-        public static final int summary_label_description1=0x7f0c0057;
-        public static final int summary_label_discount=0x7f0c0053;
-        public static final int summary_label_discount1=0x7f0c0061;
-        public static final int summary_label_fees=0x7f0c0055;
-        public static final int summary_label_fees1=0x7f0c0063;
-        public static final int summary_label_interest=0x7f0c004f;
-        public static final int summary_label_interest1=0x7f0c005d;
-        public static final int summary_label_msrp=0x7f0c004b;
-        public static final int summary_label_msrp1=0x7f0c0059;
-        public static final int summary_label_tax=0x7f0c0051;
-        public static final int summary_label_tax1=0x7f0c005f;
-        public static final int summary_label_term=0x7f0c004d;
-        public static final int summary_label_term1=0x7f0c005b;
-        public static final int summary_textview_description=0x7f0c004a;
-        public static final int summary_textview_discount=0x7f0c0054;
-        public static final int summary_textview_fees=0x7f0c0056;
-        public static final int summary_textview_interest=0x7f0c0050;
-        public static final int summary_textview_payment=0x7f0c0047;
-        public static final int summary_textview_price=0x7f0c004c;
-        public static final int summary_textview_tax=0x7f0c0052;
-        public static final int summary_textview_term=0x7f0c004e;
-        public static final int summary_viewswitcher=0x7f0c0048;
-        public static final int tableRow1=0x7f0c0068;
-        public static final int tableRow2=0x7f0c0069;
-        public static final int terms=0x7f0c000b;
-        public static final int textView_discount=0x7f0c003e;
-        public static final int textView_fees=0x7f0c0040;
-        public static final int textView_tax=0x7f0c003c;
-        public static final int textview_economy_mpg=0x7f0c006d;
-        public static final int textview_economy_ppg=0x7f0c001c;
-        public static final int textview_interest_rate=0x7f0c0037;
-        public static final int textview_sticker_price=0x7f0c0035;
-        public static final int textview_term=0x7f0c0039;
-        public static final int toggle_yearMonth=0x7f0c0043;
-        public static final int top_level_layout=0x7f0c002c;
-        public static final int totalPrice=0x7f0c0042;
-        public static final int trade_in_value=0x7f0c000d;
-        public static final int txtHeader=0x7f0c007b;
-        public static final int txtTitle=0x7f0c0075;
+        public static final int TableRow01=0x7f0a000d;
+        public static final int TableRow02=0x7f0a0010;
+        public static final int container=0x7f0a0000;
+        public static final int main_edittext_interestrate=0x7f0a0012;
+        public static final int main_edittext_principal=0x7f0a000c;
+        public static final int main_edittext_term=0x7f0a000f;
+        public static final int main_imageview_logo=0x7f0a0001;
+        public static final int main_textview_interest_label=0x7f0a0009;
+        public static final int main_textview_monthly=0x7f0a0004;
+        public static final int main_textview_net=0x7f0a0007;
+        public static final int main_textview_net_label=0x7f0a0006;
+        public static final int main_textview_principal_label=0x7f0a0003;
+        public static final int main_textview_term=0x7f0a000e;
+        public static final int main_textview_totalInterest=0x7f0a0011;
+        public static final int main_textview_totalinterest=0x7f0a000a;
+        public static final int tableRow1=0x7f0a0002;
+        public static final int tableRow2=0x7f0a0005;
+        public static final int tableRow3=0x7f0a0008;
+        public static final int tableRow4=0x7f0a000b;
     }
     public static final class layout {
-        public static final int activity_add_car_window=0x7f030000;
-        public static final int activity_affordability=0x7f030001;
-        public static final int activity_amortization=0x7f030002;
-        public static final int activity_amortization_schedule=0x7f030003;
-        public static final int activity_base=0x7f030004;
-        public static final int activity_economy=0x7f030005;
-        public static final int activity_loan_list=0x7f030006;
-        public static final int activity_main=0x7f030007;
-        public static final int activity_payment=0x7f030008;
-        public static final int activity_settings=0x7f030009;
-        public static final int activity_summary=0x7f03000a;
-        public static final int affordability_fragment=0x7f03000b;
-        public static final int economy_fragment=0x7f03000c;
-        public static final int listview_amortization_row=0x7f03000d;
-        public static final int listview_header_row=0x7f03000e;
-        public static final int listview_item_row=0x7f03000f;
-        public static final int xy_chart=0x7f030010;
-    }
-    public static final class menu {
-        public static final int activity_add_car_window=0x7f0b0000;
-        public static final int activity_affordability_fragment=0x7f0b0001;
-        public static final int activity_amortization=0x7f0b0002;
-        public static final int activity_amortization_schedule=0x7f0b0003;
-        public static final int activity_base=0x7f0b0004;
-        public static final int activity_economy=0x7f0b0005;
-        public static final int activity_loan_list=0x7f0b0006;
-        public static final int activity_main=0x7f0b0007;
-        public static final int activity_payment=0x7f0b0008;
-        public static final int activity_settings=0x7f0b0009;
-        public static final int activity_summary=0x7f0b000a;
-        public static final int affordability_fragment=0x7f0b000b;
-        public static final int economy_fragment=0x7f0b000c;
+        public static final int activity_main=0x7f030000;
     }
     public static final class string {
-        public static final int affordability_interest=0x7f0a0021;
-        /**  Affordability Fragment 
+        /**  Mutui Student Loan 
          */
-        public static final int affordability_payment=0x7f0a0020;
-        public static final int affordability_term=0x7f0a0022;
-        /**  Affordability 
-         */
-        public static final int affordability_textview_affordability=0x7f0a0036;
-        public static final int affordability_tiv=0x7f0a0023;
-        public static final int app_name=0x7f0a0000;
-        public static final int button_add=0x7f0a0015;
-        public static final int button_calculate=0x7f0a0010;
-        public static final int button_cancel=0x7f0a001d;
-        /**  Add Car Activity 
-         */
-        public static final int button_ok=0x7f0a001c;
-        public static final int button_save=0x7f0a000f;
-        public static final int economy_textview_mpg=0x7f0a0026;
-        /**  Economy Fragment 
-         */
-        public static final int economy_textview_mpy=0x7f0a0025;
-        public static final int economy_textview_ppg=0x7f0a0027;
-        public static final int hello_world=0x7f0a0019;
-        public static final int initial_interest=0x7f0a0012;
-        public static final int initial_price=0x7f0a0011;
-        public static final int initial_term=0x7f0a0013;
-        public static final int menu_settings=0x7f0a0002;
-        public static final int settings_summary_delete=0x7f0a0032;
-        public static final int settings_title_about=0x7f0a002d;
-        public static final int settings_title_affordability=0x7f0a002b;
-        public static final int settings_title_contact=0x7f0a002e;
-        public static final int settings_title_data=0x7f0a0030;
-        public static final int settings_title_delete=0x7f0a0031;
-        public static final int settings_title_measurement=0x7f0a002a;
-        /**  Settings Fragment 
-         */
-        public static final int settings_title_preferences=0x7f0a0029;
-        public static final int settings_title_rate=0x7f0a002f;
-        public static final int settings_title_support=0x7f0a002c;
-        public static final int summary=0x7f0a0018;
-        public static final int summary_textview_term=0x7f0a001b;
-        public static final int textview_cars=0x7f0a0016;
-        public static final int textview_discount=0x7f0a000d;
-        public static final int textview_fees=0x7f0a000e;
-        public static final int textview_interest_rate=0x7f0a000a;
-        public static final int textview_sticker_price=0x7f0a0009;
-        public static final int textview_tax=0x7f0a000c;
-        public static final int textview_term=0x7f0a000b;
-        public static final int title_activity_add_car_window=0x7f0a001a;
-        public static final int title_activity_affordability_fragment=0x7f0a001f;
-        public static final int title_activity_amortization=0x7f0a001e;
-        public static final int title_activity_amortization_schedule=0x7f0a0034;
-        public static final int title_activity_base=0x7f0a0006;
-        public static final int title_activity_economy=0x7f0a0033;
-        /**  Economy Activity 
-         */
-        public static final int title_activity_economy_acitivity=0x7f0a0007;
-        public static final int title_activity_economy_fragment=0x7f0a0024;
-        public static final int title_activity_loan_list=0x7f0a0028;
+        public static final int app_name=0x7f090000;
+        public static final int main_edittext_interestrate=0x7f09000c;
+        public static final int main_edittext_principal=0x7f09000a;
+        public static final int main_edittext_term=0x7f09000b;
+        public static final int main_textview_interestrate=0x7f090009;
+        public static final int main_textview_monthly=0x7f090004;
         /**  Main Activity 
          */
-        public static final int title_activity_main=0x7f0a0014;
-        /**  Payment Activity 
-         */
-        public static final int title_activity_payment=0x7f0a0008;
-        public static final int title_activity_settings=0x7f0a0035;
-        /**  Summary Activity 
-         */
-        public static final int title_activity_summary=0x7f0a0017;
-        /**  Action Bar 
-         */
-        public static final int title_section1=0x7f0a0003;
-        public static final int title_section2=0x7f0a0004;
-        public static final int title_section3=0x7f0a0005;
-        public static final int total_price=0x7f0a0001;
+        public static final int main_textview_monthly_label=0x7f090001;
+        public static final int main_textview_net=0x7f090005;
+        public static final int main_textview_net_label=0x7f090002;
+        public static final int main_textview_principal=0x7f090007;
+        public static final int main_textview_term=0x7f090008;
+        public static final int main_textview_totalinterest=0x7f090006;
+        public static final int main_textview_totalinterest_label=0x7f090003;
     }
     public static final class style {
         /** 
@@ -351,47 +153,44 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f09001e;
-        public static final int Buttonmutui_blue=0x7f090002;
-        public static final int EditTextmutui_blue=0x7f090000;
-        public static final int ImageButtonmutui_blue=0x7f090003;
-        public static final int RadioButtonmutui_blue=0x7f090001;
-        public static final int SeekBarmutui_blue=0x7f090007;
-        public static final int SpinnerDropDownItemmutui_blue=0x7f090006;
-        public static final int Spinnermutui_blue=0x7f090004;
-        public static final int Spinnermutui_blue_DropDown=0x7f090005;
-        public static final int afford_input=0x7f09001d;
+        public static final int AppBaseTheme=0x7f08001e;
+        public static final int Buttonmutui_blue=0x7f080002;
+        public static final int EditTextmutui_blue=0x7f080000;
+        public static final int ImageButtonmutui_blue=0x7f080003;
+        public static final int RadioButtonmutui_blue=0x7f080001;
+        public static final int SeekBarmutui_blue=0x7f080007;
+        public static final int SpinnerDropDownItemmutui_blue=0x7f080006;
+        public static final int Spinnermutui_blue=0x7f080004;
+        public static final int Spinnermutui_blue_DropDown=0x7f080005;
+        public static final int afford_input=0x7f08001d;
         /**  AFFORDABILIY 
          */
-        public static final int afford_label=0x7f09001c;
+        public static final int afford_label=0x7f08001c;
         /**  PAYMENT CALCULATOR 
          */
-        public static final int calculatorFields=0x7f09000e;
-        public static final int calculatorInputs=0x7f09000f;
-        public static final int calculatorRows=0x7f090010;
-        public static final int econ_display=0x7f09001a;
-        public static final int econ_label=0x7f090019;
+        public static final int calculatorFields=0x7f08000e;
+        public static final int calculatorInputs=0x7f08000f;
+        public static final int calculatorRows=0x7f080010;
+        public static final int econ_display=0x7f08001a;
+        public static final int econ_label=0x7f080019;
         /**  FUEL ECONOMY 
          */
-        public static final int econ_rows=0x7f090018;
-        public static final int econ_seekbar=0x7f09001b;
-        public static final int mainBtns=0x7f09000b;
-        public static final int mainBtns_land=0x7f09000c;
-        public static final int mainBtns_sidefiller=0x7f09000d;
-        public static final int mainNavigationBtns=0x7f09000a;
-        public static final int mutui_blue=0x7f090008;
-        public static final int payment_display=0x7f090012;
-        public static final int payment_label=0x7f090011;
-        public static final int styleName=0x7f090009;
-        public static final int summaryButtons=0x7f090016;
-        public static final int summaryButtons_land=0x7f090017;
+        public static final int econ_rows=0x7f080018;
+        public static final int econ_seekbar=0x7f08001b;
+        public static final int mainBtns=0x7f08000b;
+        public static final int mainBtns_land=0x7f08000c;
+        public static final int mainBtns_sidefiller=0x7f08000d;
+        public static final int mainNavigationBtns=0x7f08000a;
+        public static final int mutui_blue=0x7f080008;
+        public static final int payment_display=0x7f080012;
+        public static final int payment_label=0x7f080011;
+        public static final int styleName=0x7f080009;
+        public static final int summaryButtons=0x7f080016;
+        public static final int summaryButtons_land=0x7f080017;
         /**  SUMMARY 
          */
-        public static final int summaryFields=0x7f090013;
-        public static final int summaryFields_content=0x7f090015;
-        public static final int summaryInputs=0x7f090014;
-    }
-    public static final class xml {
-        public static final int preferences=0x7f050000;
+        public static final int summaryFields=0x7f080013;
+        public static final int summaryFields_content=0x7f080015;
+        public static final int summaryInputs=0x7f080014;
     }
 }
