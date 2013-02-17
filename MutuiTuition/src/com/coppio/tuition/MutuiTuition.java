@@ -4,13 +4,17 @@ import java.text.NumberFormat;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ViewSwitcher;
 
 public class MutuiTuition extends Activity  {
 	
+	static boolean animation_guard = false;
 	EditText editText_interestrate;
 	EditText editText_term;
 	EditText editText_principal;
@@ -19,6 +23,7 @@ public class MutuiTuition extends Activity  {
 	TextView textView_net;
 	TextView textView_interestpaid;
 	
+	static ViewSwitcher viewSwitcher;
 	//second, we create the TextWatcher
 	TextWatcher textWatcher = new TextWatcher() {
 	 
@@ -52,6 +57,26 @@ public class MutuiTuition extends Activity  {
 		editText_interestrate.addTextChangedListener(textWatcher);
 		editText_term.addTextChangedListener(textWatcher);
 		editText_principal.addTextChangedListener(textWatcher);
+		
+		editText_interestrate.setFilters(new InputFilter[] {new DecimalDigitsInputFilter(4,2)});
+		editText_principal.setFilters(new InputFilter[] {new DecimalDigitsInputFilter(8,2)});
+		
+		viewSwitcher = (ViewSwitcher) findViewById(R.id.main_viewswitcher);
+
+		if(!animation_guard)
+		{
+			final Handler handler = new Handler();
+			
+			handler.postDelayed(new Runnable() {
+				@Override
+				public void run()
+				{
+					viewSwitcher.showNext();
+				}
+			}, 2000);
+			animation_guard = true;
+		}
+		else viewSwitcher.showNext();
 		
 		calculate();
 	}

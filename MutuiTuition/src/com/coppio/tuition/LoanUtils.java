@@ -31,7 +31,7 @@ public class LoanUtils {
 		term = term * 12;
 		if(term < 1) 
 		{
-			term = 1;
+			term = 12;
 		}
 		
 		if(interest == 0)
@@ -79,7 +79,7 @@ public class LoanUtils {
 	public static double calculateTotalPaid(double principal, int term, double interest)
 	{
 		double monthlyAmount = LoanUtils.calculateMonthlyPayment(principal, term, interest, false);
-		return LoanUtils.round(term*monthlyAmount, 2);
+		return LoanUtils.round(term*12*monthlyAmount, 2);
 	}
 	
 	public static double round(double number, double decimal_places)
