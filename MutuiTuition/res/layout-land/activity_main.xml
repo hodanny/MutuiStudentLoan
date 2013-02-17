@@ -9,13 +9,13 @@
     tools:context=".MainActivity" >
     
     <ViewSwitcher 
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main_viewswitcher"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out"
         >
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -30,7 +30,6 @@
             android:src="@drawable/splash" />
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,25 +39,28 @@
             android:id="@+id/imageView2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
             android:padding="@dimen/sixteen"
             android:src="@drawable/title" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/sixteen" >
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/twentyeight"
-                android:paddingRight="@dimen/sixteen" >
+                android:layout_weight="0.5"
+                android:background="@drawable/lines"
+                android:orientation="vertical" >
 
                 <LinearLayout
                     style="@style/display_rows_land"
                     android:layout_width="match_parent"
-                    android:orientation="vertical" >
+                    android:orientation="horizontal" >
 
                     <TextView
                         android:id="@+id/main_textview_monthly_label"
@@ -74,7 +76,7 @@
                 <LinearLayout
                     style="@style/display_rows_land"
                     android:layout_width="match_parent"
-                    android:orientation="vertical" >
+                    android:orientation="horizontal" >
 
                     <TextView
                         android:id="@+id/main_textview_net_label"
@@ -90,7 +92,7 @@
                 <LinearLayout
                     style="@style/display_rows_land"
                     android:layout_width="match_parent"
-                    android:orientation="vertical" >
+                    android:orientation="horizontal" >
 
                     <TextView
                         android:id="@+id/main_textview_interest_label"
@@ -105,8 +107,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.5"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/sixteen"
                 android:paddingRight="@dimen/twentyeight" >
@@ -123,7 +126,6 @@
                     <EditText
                         android:id="@+id/main_edittext_principal"
                         style="@style/input_field_land"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:text="15000" />
@@ -141,7 +143,6 @@
                     <EditText
                         android:id="@+id/main_edittext_term"
                         style="@style/input_field_land"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="number"
                         android:maxLength="2"
@@ -160,7 +161,6 @@
                     <EditText
                         android:id="@+id/main_edittext_interestrate"
                         style="@style/input_field_land"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:text="2.5" />
@@ -168,5 +168,6 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </ViewSwitcher>
 </LinearLayout>

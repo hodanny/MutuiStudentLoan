@@ -34,7 +34,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen" >
 
         <ImageView
             android:id="@+id/imageView2"
@@ -47,6 +49,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/lines"
             android:orientation="vertical"
             android:padding="@dimen/sixteen" >
 
@@ -97,9 +100,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/sixteen"
-            android:paddingRight="@dimen/sixteen" >
+            android:orientation="vertical" >
 
             <LinearLayout
                 style="@style/rows"
@@ -115,10 +116,7 @@
                     style="@style/input_field"
                     android:ems="10"
                     android:inputType="numberDecimal"
-                    android:text="15000" >
-
-                    <requestFocus />
-                </EditText>
+                    android:text="15000" />
             </LinearLayout>
 
             <LinearLayout style="@style/rows" >
