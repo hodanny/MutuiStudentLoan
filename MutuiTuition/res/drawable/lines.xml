@@ -16,7 +16,7 @@
         android:color="#444444" />
 
     <solid 
-        android:color="#70ffffff"
+        android:color="#75ffffff"
         android:paddingLeft="10dip"
         android:paddingTop="10dip"/>
 
