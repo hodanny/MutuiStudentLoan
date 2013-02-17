@@ -6,6 +6,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/default_gap"
+    android:paddingTop="@dimen/twentyeight"
     tools:context=".MainActivity" >
 
     <ViewSwitcher
@@ -15,6 +16,20 @@
         android:layout_height="fill_parent"
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingTop="@dimen/sixteen"
+            android:src="@drawable/splash" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,7 +116,10 @@
                     style="@style/input_field"
                     android:ems="10"
                     android:inputType="numberDecimal"
-                    android:text="15000" />
+                    android:text="15000" >
+
+                    <requestFocus />
+                </EditText>
             </LinearLayout>
 
             <LinearLayout style="@style/rows" >
@@ -135,20 +153,6 @@
                     android:text="2.5" />
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:paddingTop="@dimen/sixteen"
-            android:src="@drawable/splash" />
     </LinearLayout>
 
     </ViewSwitcher>
