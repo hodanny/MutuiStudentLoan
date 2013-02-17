@@ -8,123 +8,119 @@
     android:paddingBottom="@dimen/default_gap"
     tools:context=".MainActivity" >
 
-    <TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/sixteen"
+        android:src="@drawable/title" />
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/sixteen" >
+
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
-                android:id="@+id/main_textview_principal_label"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/main_textview_monthly_label"
+                style="@style/result_label"
                 android:text="@string/main_textview_monthly_label" />
 
             <TextView
                 android:id="@+id/main_textview_monthly"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                style="@style/result_display" />
 
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
                 android:id="@+id/main_textview_net_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/result_label"
                 android:text="@string/main_textview_net_label" />
 
             <TextView
                 android:id="@+id/main_textview_net"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                style="@style/result_display"/>
+        </LinearLayout>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
                 android:id="@+id/main_textview_interest_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/result_label"
                 android:text="@string/main_textview_totalinterest_label" />
 
             <TextView
                 android:id="@+id/main_textview_totalinterest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                style="@style/result_display" />
+        </LinearLayout>
 
-        </TableRow>
+    </LinearLayout>
 
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen" >
+
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
                 android:id="@+id/main_textview_principal_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/input_label"
                 android:text="@string/main_textview_principal" />
 
             <EditText
                 android:id="@+id/main_edittext_principal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/input_field"
                 android:ems="10" >
 
                 <requestFocus />
             </EditText>
+        </LinearLayout>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/TableRow01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
                 android:id="@+id/main_textview_term"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/input_label"
                 android:text="@string/main_textview_term" />
 
             <EditText
                 android:id="@+id/main_edittext_term"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/input_field"
                 android:ems="10" />
+        </LinearLayout>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/TableRow02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <LinearLayout
+            style="@style/rows" >
 
             <TextView
-                android:id="@+id/main_textview_totalInterest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/main_textview_interestrate"
+                style="@style/input_label"
                 android:text="@string/main_textview_interestrate" />
 
             <EditText
                 android:id="@+id/main_edittext_interestrate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/input_field"
                 android:ems="10" />
+        </LinearLayout>
 
-        </TableRow>
+    </LinearLayout>
 
-    </TableLayout>
 </LinearLayout>

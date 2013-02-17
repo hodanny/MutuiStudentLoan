@@ -3,4 +3,5 @@
     <dimen name="default_gap">16dp</dimen>
     <dimen name="logo_size">100dp</dimen>
     <dimen name="title_font_size">28dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
 </resources>

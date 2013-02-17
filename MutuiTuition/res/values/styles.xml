@@ -1,160 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="styleName">
-        <item name="android:paddingLeft">@dimen/default_gap</item>
-        <item name="android:paddingRight">@dimen/default_gap</item>
-        <item name="android:scaleType">fitStart</item>
-    </style>
-    
-    <style name="mainNavigationBtns">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">0.1</item>
-        <item name="android:layout_gravity">center</item> 
-        <item name="android:paddingBottom">5dp</item>
-        
-    </style>
-    
-    
-    <style name="mainBtns">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.4</item>
-        <item name="android:layout_gravity">center</item> 
-        <item name="android:padding">10dp</item>
-    </style>
-    
-    <style name="mainBtns_land">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.2</item>
-        <item name="android:layout_gravity">center</item> 
-        <item name="android:padding">5dp</item>
-    </style>
-    
-     <style name="mainBtns_sidefiller">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.1</item>
-    </style>
-    
-     
-     <!-- PAYMENT CALCULATOR -->
-    <style name="calculatorFields">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.4</item>
-    </style>
-    
-    <style name="calculatorInputs">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.6</item>
-        <item name="android:background">@drawable/edit_text_holo_light</item>
-    </style>
-    
-    <style name="calculatorRows">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingRight">20dp</item>
-        <item name="android:paddingLeft">25dp</item>
-    </style>    
-    
-    
-    <style name="payment_label">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.6</item>
-        <item name="android:textColor">@color/blue</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-        <item name="android:textStyle">bold</item>   
-        
-    </style>
-    
-    <style name="payment_display">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.4</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-        <item name="android:textStyle">bold</item>   
-    </style>
-    
-    <!-- SUMMARY -->
-    <style name="summaryFields">
-        <item name="android:paddingBottom">10dp</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.6</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-    </style>
-        <style name="summaryInputs">
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:background">@drawable/edit_text_holo_light</item>
-        <item name="android:layout_weight">0.4</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-    </style>
-        <style name="summaryFields_content">
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.4</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-    </style>
-    <style name="summaryButtons">
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.33</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:scaleType">fitStart</item>
-        
-    </style>
-        <style name="summaryButtons_land">
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:paddingBottom">16dp</item>
-        <item name="android:layout_weight">0.33</item>
-        
-    </style>
-    
+
     <!-- FUEL ECONOMY -->
-    <style name="econ_rows">
-        <item name="android:layout_height">0dp</item>
+    <style name="rows">
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_weight">0.1</item>
-        <item name="android:paddingTop">26dp</item>
+        <item name="android:paddingTop">10dp</item>
     </style>
-    <style name="econ_label">
+    <style name="result_label">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.7</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
     </style>
-    <style name="econ_display">
+    <style name="result_display">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_weight">0.4</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
     </style>
     
-    <style name="econ_seekbar">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_weight">0.1</item>
-    </style>
-    
-    
-    <!-- AFFORDABILIY -->
-    <style name="afford_label">
-        <item name="android:layout_width">0dp</item>
+    <style name="input_label">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0.5</item>
-    </style>
-    
-    <style name="afford_input">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">0.5</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
+    <style name="input_field">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
 
 </resources>
