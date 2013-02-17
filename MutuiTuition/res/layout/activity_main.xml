@@ -8,15 +8,6 @@
     android:paddingBottom="@dimen/default_gap"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/main_imageview_logo"
-        android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:paddingBottom="@dimen/default_gap"
-        android:paddingTop="@dimen/default_gap"
-        android:scaleType="center"
-        android:src="@drawable/mutui_logo" />
-
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
