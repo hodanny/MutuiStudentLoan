@@ -87,7 +87,9 @@
             <EditText
                 android:id="@+id/main_edittext_principal"
                 style="@style/input_field"
-                android:ems="10" >
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="15000" >
 
                 <requestFocus />
             </EditText>
@@ -104,7 +106,10 @@
             <EditText
                 android:id="@+id/main_edittext_term"
                 style="@style/input_field"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="number"
+                android:text="10" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -118,7 +123,10 @@
             <EditText
                 android:id="@+id/main_edittext_interestrate"
                 style="@style/input_field"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="2.5" />
+
         </LinearLayout>
 
     </LinearLayout>
