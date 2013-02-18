@@ -13,7 +13,7 @@
         android:id="@+id/main_viewswitcher"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.9"
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out" >
 
@@ -29,153 +29,162 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/splash" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:paddingLeft="@dimen/sixteen"
-        android:paddingRight="@dimen/sixteen"
-        android:paddingTop="@dimen/twentyeight" >
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/twentyeight"
-            android:scaleType="center"
-            android:src="@drawable/title" />
-
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/lines"
+            android:layout_height="fill_parent"
             android:orientation="vertical"
-            android:padding="@dimen/sixteen" >
-
-            <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
-
-                <TextView
-                    android:id="@+id/main_textview_monthly_label"
-                    style="@style/result_label"
-                    android:text="@string/main_textview_monthly_label" />
-
-                <TextView
-                    android:id="@+id/main_textview_monthly"
-                    style="@style/result_display"
-                    android:text="$4334.00" />
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
-
-                <TextView
-                    android:id="@+id/main_textview_net_label"
-                    style="@style/result_label"
-                    android:text="@string/main_textview_net_label" />
-
-                <TextView
-                    android:id="@+id/main_textview_net"
-                    style="@style/result_display" />
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
-
-                <TextView
-                    android:id="@+id/main_textview_interest_label"
-                    style="@style/result_label"
-                    android:text="@string/main_textview_totalinterest_label" />
-
-                <TextView
-                    android:id="@+id/main_textview_totalinterest"
-                    style="@style/result_display" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/twentyeight"
             android:paddingLeft="@dimen/sixteen"
             android:paddingRight="@dimen/sixteen"
-            android:paddingTop="@dimen/sixteen" >
+            android:paddingTop="@dimen/twentyeight" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twentyeight"
+                android:scaleType="center"
+                android:src="@drawable/title" />
 
             <LinearLayout
-                style="@style/rows"
-                android:layout_width="match_parent" >
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/lines"
+                android:orientation="vertical"
+                android:padding="@dimen/sixteen" >
 
-                <TextView
-                    android:id="@+id/main_textview_principal_label"
-                    style="@style/input_label"
-                    android:text="@string/main_textview_principal" />
+                <LinearLayout
+                    style="@style/rows"
+                    android:layout_width="match_parent" >
 
-                <EditText
-                    android:id="@+id/main_edittext_principal"
-                    style="@style/input_field"
-                    android:ems="10"
-                    android:inputType="numberDecimal"
-                    android:text="15000" >
+                    <TextView
+                        android:id="@+id/main_textview_monthly_label"
+                        style="@style/result_label"
+                        android:text="@string/main_textview_monthly_label" />
 
-                    <requestFocus />
-                </EditText>
+                    <TextView
+                        android:id="@+id/main_textview_monthly"
+                        style="@style/result_display"
+                        android:text="$4334.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/rows"
+                    android:layout_width="match_parent" >
+
+                    <TextView
+                        android:id="@+id/main_textview_net_label"
+                        style="@style/result_label"
+                        android:text="@string/main_textview_net_label" />
+
+                    <TextView
+                        android:id="@+id/main_textview_net"
+                        style="@style/result_display" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/rows"
+                    android:layout_width="match_parent" >
+
+                    <TextView
+                        android:id="@+id/main_textview_interest_label"
+                        style="@style/result_label"
+                        android:text="@string/main_textview_totalinterest_label" />
+
+                    <TextView
+                        android:id="@+id/main_textview_totalinterest"
+                        style="@style/result_display" />
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/rows" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/twentyeight"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen" >
 
-                <TextView
-                    android:id="@+id/main_textview_term"
-                    style="@style/input_label"
-                    android:text="@string/main_textview_term" />
+                <LinearLayout
+                    style="@style/rows"
+                    android:layout_width="match_parent" >
 
-                <EditText
-                    android:id="@+id/main_edittext_term"
-                    style="@style/input_field"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:maxLength="2"
-                    android:text="10" />
+                    <TextView
+                        android:id="@+id/main_textview_principal_label"
+                        style="@style/input_label"
+                        android:text="@string/main_textview_principal" />
+
+                    <EditText
+                        android:id="@+id/main_edittext_principal"
+                        style="@style/input_field"
+                        android:ems="10"
+                        android:fitsSystemWindows="true"
+                        android:inputType="numberDecimal"
+                        android:text="15000" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/rows" >
+
+                    <TextView
+                        android:id="@+id/main_textview_term"
+                        style="@style/input_label"
+                        android:text="@string/main_textview_term" />
+
+                    <EditText
+                        android:id="@+id/main_edittext_term"
+                        style="@style/input_field"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:text="10" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/rows" >
+
+                    <TextView
+                        android:id="@+id/main_textview_interestrate"
+                        style="@style/input_label"
+                        android:text="@string/main_textview_interestrate" />
+
+                    <EditText
+                        android:id="@+id/main_edittext_interestrate"
+                        style="@style/input_field"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="2.5" />
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/rows" >
-
-                <TextView
-                    android:id="@+id/main_textview_interestrate"
-                    style="@style/input_label"
-                    android:text="@string/main_textview_interestrate" />
-
-                <EditText
-                    android:id="@+id/main_edittext_interestrate"
-                    style="@style/input_field"
-                    android:ems="10"
-                    android:inputType="numberDecimal"
-                    android:text="2.5" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView_about_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:onClick="onClick_about"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingTop="@dimen/twentyeight"
+                android:scaleType="fitEnd"
+                android:src="@drawable/about" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView_about_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center"
-            android:onClick="onClick_about"
-            android:paddingBottom="@dimen/sixteen"
-            android:paddingTop="@dimen/twentyeight"
-            android:scaleType="fitEnd"
-            android:src="@drawable/about" />
-    </LinearLayout>
 
     </ViewSwitcher>
 
+    <LinearLayout
+        android:id="@+id/main_layout_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center|end"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
 
+   </LinearLayout>
   
 </LinearLayout>

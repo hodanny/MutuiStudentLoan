@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -87,8 +88,9 @@ public class MutuiTuition extends Activity  {
 		}
 		else viewSwitcher.showNext();
 		
-		LinearLayout layout = (LinearLayout) findViewById(R.id.container);
+		LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout_ad);
 	    ad = new AdView(this, AdSize.BANNER, "a151209edabfa3b");
+	    ad.setGravity(Gravity.CENTER);
 	    layout.addView(ad);
 //	    AdRequest adRequest = new AdRequest();
 //	    adRequest.addTestDevice("4FEE23C761CF84D39A3AB3D1CADD481F");
