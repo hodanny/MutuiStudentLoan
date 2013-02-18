@@ -34,7 +34,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MutuiTuit
 	}
 	
 	public void testPreConditions() throws Exception {
-		solo.assertCurrentActivity("Expected Main Activity", "MainActivity");
+		solo.assertCurrentActivity("Expected Main Activity", "MutuiTuition");
 		assertNotNull("Expected About Image", about);
 	}
 	
