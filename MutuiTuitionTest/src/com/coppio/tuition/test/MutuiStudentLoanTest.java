@@ -31,15 +31,7 @@ public class MutuiStudentLoanTest extends ActivityInstrumentationTestCase2<Mutui
 		solo.finishOpenedActivities();
 	}
 	
-	/*
-	 * Monthly 1
-	 * Total 3
-	 * Interest 5
-	 * Principal 0
-	 * Term 1
-	 * Interest Rate 2
-	 * 
-	 */
+
 	public void testCase1()
 	{
 		solo.enterText(0, "50000");
