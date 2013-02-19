@@ -11,7 +11,7 @@
         android:id="@+id/main_viewswitcher"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
+        android:layout_weight="0.8"
         android:inAnimation="@android:anim/fade_in"
         android:outAnimation="@android:anim/fade_out" >
 
@@ -144,7 +144,10 @@
                         style="@style/input_field_land"
                         android:ems="10"
                         android:inputType="numberDecimal"
-                        android:text="15000" />
+                        android:text="15000" >
+
+                        <requestFocus />
+                    </EditText>
                 </LinearLayout>
 
                 <LinearLayout
@@ -186,4 +189,13 @@
     </LinearLayout>
 
 </ViewSwitcher>
+
+    <LinearLayout
+        android:id="@+id/main_layout_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical" >
+    </LinearLayout>
+
 </LinearLayout>
