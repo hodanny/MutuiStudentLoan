@@ -9,5 +9,10 @@
     <dimen name="six">6dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+    <dimen name="large_text">20dp</dimen>
+    <dimen name="medium_text">18dp</dimen>
+    <dimen name="small_text">14dp</dimen>
 
 </resources>

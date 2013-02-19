@@ -14,27 +14,26 @@
         <item name="android:layout_weight">0.6</item>
         <item name="android:textColor">@color/red</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/medium_text</item>
     </style>
     <style name="result_display">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_gravity">right</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/medium_text</item>
     </style>
     
     <style name="input_label">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.5</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_weight">0.55</item>
+        <item name="android:textSize">@dimen/small_text</item>
     </style>
     <style name="input_field">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.5</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_weight">0.45</item>
+        <item name="android:textSize">@dimen/small_text</item>
     </style>
 
     <style name="rows_land">
@@ -56,26 +55,25 @@
         <item name="android:layout_weight">0.5</item>
         <item name="android:textColor">@color/red</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/medium_text</item>
     </style>
     <style name="result_display_land">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_gravity">right</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/medium_text</item>
     </style>
     
     <style name="input_label_land">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.5</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_weight">0.55</item>
+        <item name="android:textSize">@dimen/small_text</item>
     </style>
     <style name="input_field_land">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">0.5</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_weight">0.45</item>
+        <item name="android:textSize">@dimen/small_text</item>
     </style>
 </resources>
